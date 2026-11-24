@@ -1,0 +1,25 @@
+{
+  "name": "pet-adoption-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "build": "node --check src/server.js && node --check test/api.test.js && node --check test/setup-db.test.js",
+    "test": "vitest run",
+    "db:setup": "node scripts/setup-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.5.0",
+    "mysql2": "^3.12.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.9"
+  }
+}
