@@ -1,1 +1,1 @@
-This is an application for testing
+This is an application for testing.
