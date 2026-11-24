@@ -9,3 +9,4 @@ server/uploads/
 client/dist/
 coverage/
 .agents
+node_modules
