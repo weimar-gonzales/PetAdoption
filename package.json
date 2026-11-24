@@ -1,0 +1,23 @@
+{
+  "name": "pet-adoption",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "install:deps": "npm install",
+    "dev": "concurrently \"npm run dev --workspace client\" \"npm run dev --workspace server\"",
+    "api": "npm run start --workspace server",
+    "frontend": "npm run dev --workspace client",
+    "build": "npm run build --workspaces --if-present",
+    "build:client": "npm run build --workspace client",
+    "build:server": "npm run build --workspace server",
+    "preview": "npm run preview --workspace client",
+    "test": "npm run test --workspaces --if-present",
+    "db:setup": "npm run db:setup --workspace server",
+    "db:migrate": "npm run db:setup --workspace server",
+    "db:seed": "npm run db:setup --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

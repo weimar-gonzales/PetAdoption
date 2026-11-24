@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+server/.env
+# Runtime pet image uploads (generated files must never be committed)
+server/uploads/
+client/dist/
+coverage/
+.agents
+node_modules
